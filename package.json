@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "netlify": "^13.1.14",
+    "netlify-cli": "^17.17.0",
+    "node-fetch": "^3.3.2",
+    "uglify-js": "^3.17.4",
+    "web3": "^4.5.0"
+  },
+  "name": "Code_backup",
+  "version": "1.0.0",
+  "main": "blocksniper_app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "javascript-obfuscator": "^4.1.0"
+  }
+}
