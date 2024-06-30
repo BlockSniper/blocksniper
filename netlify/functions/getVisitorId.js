@@ -1,18 +1,19 @@
-// getVisitorId.js
-
 const cookie = require('cookie');
 
 exports.handler = async (event, context) => {
+  const origin = event.headers.origin || event.headers.Origin;
+  
   const corsHeaders = {
-    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Origin": origin,
     "Access-Control-Allow-Headers": "Content-Type",
     "Access-Control-Allow-Methods": "GET, OPTIONS",
-    "Content-Type": "application/json"
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Credentials": "true"
   };
 
   if (event.httpMethod === "OPTIONS") {
     return {
-      statusCode: 204,
+      statusCode: 204, // No Content
       headers: corsHeaders,
       body: ""
     };
