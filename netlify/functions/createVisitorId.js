@@ -1,4 +1,4 @@
-const { parse, serialize } = require('cookie');
+//const { parse, serialize } = require('cookie');
 
 exports.handler = async (event) => {
     const corsHeaders = {
